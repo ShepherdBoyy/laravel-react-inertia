@@ -4,11 +4,7 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite",
-        "backend": "php artisan serve",
-        "frontend": "vite",
-        "tinker": "php artisan tinker",
-        "all": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run tinker\""
+        "dev": "vite"
     },
     "devDependencies": {
         "@headlessui/react": "^2.0.0",
