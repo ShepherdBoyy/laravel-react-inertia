@@ -8,6 +8,7 @@ use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class ProjectController extends Controller
 {
@@ -52,15 +53,28 @@ class ProjectController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(StoreProjectRequest $request)
-    {
-        $data = $request->validated();
-        $data["created_by"] = Auth::id();
-        $data["updated_by"] = Auth::id();
-        Project::create($data);
+{
+    $data = $request->validated();
 
-        return to_route('project.index')
-            ->with("success", "Project was created");
+    /** @var \Illuminate\Http\UploadedFile|null $image */
+    $image = $data['image'] ?? null;
+
+    $data['created_by'] = Auth::id();
+    $data['updated_by'] = Auth::id();
+
+    if ($image instanceof \Illuminate\Http\UploadedFile) {
+        $data['image_path'] = $image->store('project/' . Str::random(), 'public');
     }
+
+    unset($data['image']); // remove raw UploadedFile so it won’t break create()
+
+    Project::create($data);
+
+    return to_route('project.index')
+        ->with('success', 'Project was created');
+}
+
+
 
     /**
      * Display the specified resource.
