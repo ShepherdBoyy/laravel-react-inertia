@@ -4,7 +4,7 @@ import SelectInput from "@/Components/SelectInput";
 import TextAreaInput from "@/Components/TextAreaInput";
 import TextInput from "@/Components/TextInput";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
-import { Head, useForm } from "@inertiajs/react";
+import { Head, Link, useForm } from "@inertiajs/react";
 
 export default function Create({ auth }) {
     const {data, setData, post, errors, reset} = useForm({
@@ -110,6 +110,18 @@ export default function Create({ auth }) {
                                     <option value="completed">Completed</option>
                                 </SelectInput>
                                 <InputError message={errors.project_status} className="mt-2" />
+                            </div>
+
+                            <div className="mt-4 text-right">
+                                <Link
+                                    href={route("project.index")} 
+                                    className="bg-gray-100 py-1 px-3 text-gray-800 rounded shadow transition-all hover:bg-gray-200 mr-2"
+                                >
+                                    Cancel
+                                </Link>
+                                <button className="bg-emerald-500 py-1 px-3 text-white rounded shadow transition-all hover:bg-emerald-600">
+                                    Submit
+                                </button>
                             </div>
                         </form>
                     </div>
