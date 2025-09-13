@@ -53,26 +53,26 @@ class ProjectController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(StoreProjectRequest $request)
-{
-    $data = $request->validated();
+    {
+        $data = $request->validated();
 
-    /** @var \Illuminate\Http\UploadedFile|null $image */
-    $image = $data['image'] ?? null;
+        /** @var \Illuminate\Http\UploadedFile|null $image */
+        $image = $data['image'] ?? null;
 
-    $data['created_by'] = Auth::id();
-    $data['updated_by'] = Auth::id();
+        $data['created_by'] = Auth::id();
+        $data['updated_by'] = Auth::id();
 
-    if ($image instanceof \Illuminate\Http\UploadedFile) {
-        $data['image_path'] = $image->store('project/' . Str::random(), 'public');
+        if ($image instanceof \Illuminate\Http\UploadedFile) {
+            $data['image_path'] = $image->store('project/' . Str::random(), 'public');
+        }
+
+        unset($data['image']); // remove raw UploadedFile so it won’t break create()
+
+        Project::create($data);
+
+        return to_route('project.index')
+            ->with('success', 'Project was created');
     }
-
-    unset($data['image']); // remove raw UploadedFile so it won’t break create()
-
-    Project::create($data);
-
-    return to_route('project.index')
-        ->with('success', 'Project was created');
-}
 
 
 
@@ -111,7 +111,9 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        //
+        return inertia("Project/Edit", [
+            "project" => new ProjectResource($project)
+        ]);
     }
 
     /**
