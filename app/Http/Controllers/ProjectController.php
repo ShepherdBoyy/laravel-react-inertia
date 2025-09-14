@@ -128,7 +128,7 @@ class ProjectController extends Controller {
 
         if ($image) {
             if ($project->image_path) {
-                Storage::disk("public")->delete(dirname($project->image_path));
+                Storage::disk("public")->deleteDirectory(dirname($project->image_path));
             }
             $data['image_path'] = $image->store('project/' . Str::random(), 'public');
         }
@@ -146,7 +146,7 @@ class ProjectController extends Controller {
         $name = $project->name;
         $project->delete();
         if ($project->image_path) {
-            Storage::disk("public")->delete(dirname($project->image_path));
+            Storage::disk("public")->deleteDirectory(dirname($project->image_path));
         }
         return to_route('project.index')->with('success', "Project \"$name\" was deleted");
     }
