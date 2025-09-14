@@ -7,18 +7,18 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head, Link, useForm } from "@inertiajs/react";
 
 export default function Edit({ auth, project }) {
-    const {data, setData, post, errors, reset} = useForm({
+    const {data, setData, put, errors, reset} = useForm({
         image: "",
         name: project.name || "",
         status: project.status || "",
         description: project.description || "",
         due_date: project.due_date || ""
     })
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        post(route("project.store"));
+        put(route("project.update", project.id));
     }
 
     return (
@@ -32,7 +32,7 @@ export default function Edit({ auth, project }) {
                 </div>
             }
         >
-            <Head title="Create New Project" />
+            <Head title="Edit Project" />
 
             <div className="py-12">
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
