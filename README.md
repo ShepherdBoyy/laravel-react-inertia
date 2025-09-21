@@ -1,1 +1,1 @@
-magcode ka na please hahahahaah
+Nood tayo motivational videos para ganahan tayo magcode
