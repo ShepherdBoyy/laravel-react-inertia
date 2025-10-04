@@ -1,1 +1,1 @@
-ano kailan bako magcocode?
+ang saya saya ngayon
