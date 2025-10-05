@@ -1,1 +1,1 @@
-Thank you sa memories
+hehehehehehe walang katulad un
