@@ -1,1 +1,1 @@
-hayss
+kakalimutan ko na ung feelings ko kay ellayza
