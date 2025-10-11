@@ -1,1 +1,1 @@
-ow yeah
+kalimutan ka hahahahah
