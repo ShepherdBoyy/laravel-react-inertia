@@ -1,2 +1,2 @@
-gusto kong magsumbong sayo
-pag pagod na pagod na ako
+i wonder why
+iwonder how
