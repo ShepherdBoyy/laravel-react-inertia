@@ -1,1 +1,2 @@
-kalimutan ka hahahahah
+gusto kong magsumbong sayo
+pag pagod na pagod na ako
