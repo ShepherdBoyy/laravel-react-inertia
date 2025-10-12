@@ -1,1 +1,1 @@
-bakit hindi tayo nagcode ngayong week pero may commit hahahahaha
+Daily commit let's go
