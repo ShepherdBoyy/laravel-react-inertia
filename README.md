@@ -1,2 +1,1 @@
-nagiisip ako kung bibili ba ko ng bike or hindi
-pang service pa ppang pasok sa ohabart
+bakit hindi tayo nagcode ngayong week pero may commit hahahahaha
