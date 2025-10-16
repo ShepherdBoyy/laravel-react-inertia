@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Storage;
 
 class TaskResource extends JsonResource
 {
+    public static $wrap = false;
+
     /**
      * Transform the resource into an array.
      *
@@ -27,6 +29,8 @@ class TaskResource extends JsonResource
             'image_path' => $this->image_path ?
                 Storage::url($this->image_path) : $this->image_path,
             'project' => new ProjectResource($this->project),
+            'project_id' => $this->project_id,
+            'assigned_user_id' => $this->assigned_user_id,
             'assignedUser' => $this->assignedUser ? new UserResource($this->assignedUser) : null,
             'createdBy' => new UserResource($this->createdBy),
             'updatedBy' => new UserResource($this->updatedBy)
