@@ -73,7 +73,7 @@ export default function Edit({ auth, task, projects, users }) {
                                 />
                             </div>
 
-                            <div>
+                            <div className="mt-4">
                                 <InputLabel
                                     htmlFor="task_project_id"
                                     value="Project"
@@ -191,13 +191,14 @@ export default function Edit({ auth, task, projects, users }) {
 
                             <div className="mt-4">
                                 <InputLabel
-                                    htmlFor="project_status"
-                                    value="Project Status"
+                                    htmlFor="task_status"
+                                    value="Task Status"
                                 />
                                 <SelectInput
-                                    id="project_status"
+                                    id="task_status"
                                     name="status"
                                     className="block w-full mt-1"
+                                    value={data.status}
                                     onChange={(e) =>
                                         setData("status", e.target.value)
                                     }
@@ -210,7 +211,7 @@ export default function Edit({ auth, task, projects, users }) {
                                     <option value="completed">Completed</option>
                                 </SelectInput>
                                 <InputError
-                                    message={errors.project_status}
+                                    message={errors.task_status}
                                     className="mt-2"
                                 />
                             </div>
@@ -223,6 +224,7 @@ export default function Edit({ auth, task, projects, users }) {
                                 <SelectInput
                                     id="task_priority"
                                     name="priority"
+                                    value={data.priority}
                                     className="block w-full mt-1"
                                     onChange={(e) =>
                                         setData("priority", e.target.value)
@@ -247,6 +249,7 @@ export default function Edit({ auth, task, projects, users }) {
                                 <SelectInput
                                     id="task_assigned_user"
                                     name="assigned_user_id"
+                                    value={data.assigned_user_id}
                                     className="block w-full mt-1"
                                     onChange={(e) =>
                                         setData(

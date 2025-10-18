@@ -3,7 +3,7 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
 import TasksTable from "../Task/TasksTable";
 
-export default function Show({ auth, project, tasks, queryParams }) {
+export default function Show({ auth, project, tasks, queryParams, success }) {
   return (
     <AuthenticatedLayout
         user={auth.user}
@@ -22,24 +22,24 @@ export default function Show({ auth, project, tasks, queryParams }) {
                         <img
                             src={project.image_path}
                             alt=""
-                            className="w-full h-64 object-cover"
+                            className="object-cover w-full h-64"
                         />
                     </div>
                     <div className="p-6 text-gray-900 dark:text-gray-100">
-                        <div className="grid gap-1 grid-cols-2 mt-2">
+                        <div className="grid grid-cols-2 gap-1 mt-2">
                             <div>
                                 <div>
-                                    <label className="font-bold text-lg">Project ID</label>
+                                    <label className="text-lg font-bold">Project ID</label>
                                     <p className="mt-1">{project.id}</p>
                                 </div>
 
                                 <div className="mt-4">
-                                    <label className="font-bold text-lg">Project Name</label>
+                                    <label className="text-lg font-bold">Project Name</label>
                                     <p className="mt-1">{project.name}</p>
                                 </div>
 
                                 <div className="mt-4">
-                                    <label className="font-bold text-lg">Project Status</label>
+                                    <label className="text-lg font-bold">Project Status</label>
                                     <p className="mt-1">
                                         <span className={
                                                 "px-2 py-1 rounded text-white " + 
@@ -52,31 +52,31 @@ export default function Show({ auth, project, tasks, queryParams }) {
                                 </div>
 
                                 <div className="mt-4">
-                                    <label className="font-bold text-lg">Created By</label>
+                                    <label className="text-lg font-bold">Created By</label>
                                     <p className="mt-1">{project.createdBy.name}</p>
                                 </div>
                             </div>
 
                             <div>
                                 <div>
-                                    <label className="font-bold text-lg">Due Date</label>
+                                    <label className="text-lg font-bold">Due Date</label>
                                     <p className="mt-1">{project.due_date}</p>
                                 </div>
 
                                 <div className="mt-4">
-                                    <label className="font-bold text-lg">Create Date</label>
+                                    <label className="text-lg font-bold">Create Date</label>
                                     <p className="mt-1">{project.created_at}</p>
                                 </div>
 
                                 <div className="mt-4">
-                                    <label className="font-bold text-lg">Updated By</label>
+                                    <label className="text-lg font-bold">Updated By</label>
                                     <p className="mt-1">{project.updatedBy.name}</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="mt-4">
-                            <label className="font-bold text-lg">Project Description</label>
+                            <label className="text-lg font-bold">Project Description</label>
                             <p className="mt-1">{project.description}</p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default function Show({ auth, project, tasks, queryParams }) {
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800">
                     <div className="p-6 text-gray-900 dark:text-gray-100">
-                        <TasksTable tasks={tasks} queryParams={queryParams} hideProjectNameColumn={true} />
+                        <TasksTable tasks={tasks} queryParams={queryParams} hideProjectNameColumn={true} success={success} />
                     </div>
                 </div>
             </div>
