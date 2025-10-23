@@ -1,1 +1,1 @@
-ano naman kaya sunod na aaralin?
+up skill lang pare
