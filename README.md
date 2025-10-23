@@ -1,1 +1,1 @@
-finish na may nanalo na
+ano naman kaya sunod na aaralin?
