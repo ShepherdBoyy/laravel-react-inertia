@@ -1,1 +1,1 @@
-aray mo nakalimutan magcommit hahaha
+lakas ni gl
