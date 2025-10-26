@@ -1,1 +1,1 @@
-lakas ni gl
+yeah wazzzup
