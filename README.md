@@ -1,1 +1,1 @@
-magaral ba ako ng cyber security ?
+tara g palag palag yan
