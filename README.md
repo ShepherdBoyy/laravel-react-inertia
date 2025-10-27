@@ -1,1 +1,1 @@
-heto na naman tayo
+ang mahalaga dito ay may commit
