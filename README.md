@@ -1,1 +1,1 @@
-heto na naman
+paldo tayo ngayon ah
