@@ -1,1 +1,1 @@
-paldo tayo ngayon ah
+mcdo e hahahaaha
