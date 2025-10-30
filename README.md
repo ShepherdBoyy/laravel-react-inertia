@@ -1,1 +1,1 @@
-basang basa talaga ako
+okay long weekend yahoooooo
