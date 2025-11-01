@@ -1,1 +1,1 @@
-kaantok gar
+umaayy
