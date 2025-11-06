@@ -1,1 +1,1 @@
-gawa na tayo portfolio
+sige po kuya
