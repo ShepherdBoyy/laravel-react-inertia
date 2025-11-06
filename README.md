@@ -1,1 +1,1 @@
-sige po kuya
+figma palang palag na yan hahahaaha
