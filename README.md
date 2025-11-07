@@ -1,1 +1,1 @@
-lasing na lasing
+aray kooo laing na naman boss
