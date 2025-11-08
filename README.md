@@ -1,1 +1,1 @@
-bat ba lagi tayong tinatamad
+umay na umay nako haha
