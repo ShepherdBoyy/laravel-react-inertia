@@ -1,1 +1,1 @@
-puro nalang commit wala namang ambaggahhahahaa
+ano nalang yannn 
