@@ -1,1 +1,1 @@
-umay na umay nako haha
+puro nalang commit wala namang ambaggahhahahaa
