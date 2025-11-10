@@ -1,1 +1,1 @@
-yes nakagawa na din ng landing page hahaha
+sana tuloy tuloy na to
