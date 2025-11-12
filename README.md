@@ -1,1 +1,1 @@
-push tayo pare
+kupal na boss yan
