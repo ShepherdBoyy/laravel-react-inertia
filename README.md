@@ -1,1 +1,1 @@
-sarap 27 inch monitor
+whahahhahhah let's go
