@@ -1,1 +1,1 @@
-whahahhahhah let's go
+samsung lang malakas
