@@ -1,1 +1,1 @@
-samsung lang malakas
+solid samsung kaso waldas money 8k hahahah
