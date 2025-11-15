@@ -1,1 +1,1 @@
-solid samsung kaso waldas money 8k hahahah
+basta meron monitor goods na yon hahahahah
