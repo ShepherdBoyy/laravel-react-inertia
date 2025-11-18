@@ -1,1 +1,1 @@
-legit ba serrr
+sana makuha ko ung comission
