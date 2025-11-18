@@ -1,1 +1,1 @@
-sana makuha ko ung comission
+bruuuhh
