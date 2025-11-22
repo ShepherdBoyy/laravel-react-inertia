@@ -1,1 +1,1 @@
-us2 ko na matulog
+lug2 na 
